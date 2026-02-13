@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematik ve Türk Bilim İnsanları</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    transition:0.4s;
+    background: linear-gradient(135deg,#b30000,#ffffff);
+}
+
+header {
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+}
+
+.section {
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card {
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.03);
+}
+
+.card h2 {
+    color:#b30000;
+}
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+button {
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    margin:10px;
+}
+
+.dark {
+    background:#111;
+    color:white;
+}
+
+.dark .card {
+    background:#222;
+    color:white;
+}
+
+.dark .card h2 {
+    color:#ff4444;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+Matematiğin Bilim Dallarındaki Önemi ve Türk Bilim İnsanları
+<br>
+<button onclick="toggleMode()">🌙 Gece/Gündüz</button>
+<button onclick="speakIntro()">🔊 Sesli Başlat</button>
+</header>
+
+<!-- MATEMATİĞİN ÖNEMİ BÖLÜMÜ -->
+<div class="section">
+<div class="card">
+<h2>Matematiğin Bilim Dallarındaki Önemi</h2>
+<p>
+Matematik, tüm bilim dallarının temelini oluşturan evrensel bir dildir.
+Doğa olaylarını anlamak, ölçmek ve açıklamak için matematiksel modeller kullanılır.
+Fizikte hareket, enerji ve kuvvet hesaplamaları matematikle yapılır.
+Astronomide gezegenlerin yörüngeleri, tutulmalar ve yıldız konumları matematik sayesinde hesaplanır.
+Mühendislikte köprüler, binalar ve makineler matematiksel hesaplarla tasarlanır.
+Tıp alanında istatistik ve veri analizi hayati öneme sahiptir.
+Bilgisayar bilimi tamamen matematiksel mantık ve algoritmalar üzerine kuruludur.
+Ekonomi, yapay zeka ve uzay araştırmaları da matematik olmadan ilerleyemez.
+Kısacası matematik; bilimin düşünme sistemidir, temelidir ve geleceğin teknolojisinin anahtarıdır.
+</p>
+</div>
+</div>
+
+<!-- BİLİM İNSANLARI -->
+<div class="container">
+
+<div class="card">
+<h2>El-Battani (858-929)</h2>
+<p>
+Güneş yılını çok hassas ölçmüştür.
+Sinüs ve tanjant kavramlarını geliştirmiştir.
+Trigonometrinin ilerlemesine büyük katkı sağlamıştır.
+Avrupa’da Batenius adıyla tanınmış ve çalışmaları yüzyıllarca okutulmuştur.
+</p>
+</div>
+
+<div class="card">
+<h2>El-Biruni (973-1050)</h2>
+<p>
+Dünyanın yarıçapını bugünkü değere çok yakın hesaplamıştır.
+Astronomi, matematik ve coğrafyada öncüdür.
+Bilimsel gözlem yöntemlerine büyük katkı sağlamıştır.
+</p>
+</div>
+
+<div class="card">
+<h2>Uluğ Bey (1394-1449)</h2>
+<p>
+Semerkant Rasathanesini kurmuştur.
+1000’den fazla yıldızın konumunu ölçmüştür.
+Astronomi tabloları hazırlamıştır.
+</p>
+</div>
+
+<div class="card">
+<h2>Piri Reis (1465-1553)</h2>
+<p>
+1513 tarihli dünya haritası Amerika kıtasını göstermektedir.
+Haritacılıkta matematiksel hesaplamalar kullanmıştır.
+Kitab-ı Bahriye adlı eseri denizcilik rehberidir.
+</p>
+</div>
+
+<div class="card">
+<h2>El-Cezeri (1136-1206)</h2>
+<p>
+Otomatik makineler ve mekanik sistemler geliştirmiştir.
+Robotik biliminin öncülerindendir.
+Mühendislik tarihinde önemli bir yere sahiptir.
+</p>
+</div>
+
+<div class="card">
+<h2>Cahit Arf (1910-1997)</h2>
+<p>
+Arf İnvariantı ve Arf Halkaları ile matematik dünyasında yer edinmiştir.
+Türkiye’de modern matematiğin gelişmesine öncülük etmiştir.
+</p>
+</div>
+
+<div class="card">
+<h2>Aziz Sancar (1946- )</h2>
+<p>
+DNA onarımı üzerine çalışmaları sayesinde 2015 Nobel Kimya Ödülü kazanmıştır.
+Bilimsel disiplin ve çalışkanlığın önemini vurgulamaktadır.
+</p>
+</div>
+
+<div class="card">
+<h2>Oktay Sinanoğlu (1935-2015)</h2>
+<p>
+Kuantum kimyası alanında önemli çalışmalar yapmıştır.
+Dünyanın en genç profesörlerinden biri olmuştur.
+Bilimin Türkçe yapılmasını savunmuştur.
+</p>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+    document.body.classList.toggle("dark");
+}
+
+function speakIntro(){
+    const text = "Hoş geldiniz. Bugün size matematiğin bilim dallarındaki önemi ve ünlü bilim insanlarının matematik ve astronomiye katkılarını göreceksiniz. Hadi başlayalım.";
+    const speech = new SpeechSynthesisUtterance(text);
+    speech.lang = "tr-TR";
+    speech.rate = 0.9;
+    speech.pitch = 1;
+    window.speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>
